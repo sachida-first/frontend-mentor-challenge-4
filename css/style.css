@@ -1,0 +1,160 @@
+ * {
+   padding: 0;
+   margin: 0;
+ }
+
+ body {
+   background-image: url("../images/bg-top.svg"), url("../images/bg-bottom.svg");
+   background-position: top right, bottom left;
+   background-repeat: no-repeat;
+   font-family: 'Montserrat', sans-serif;
+   background-color: hsl(240, 78%, 98%);
+   color: hsl(233, 13%, 49%);
+   font-weight: 700;
+   line-height: 1.7;
+   text-align: center;
+ }
+
+ h1 {
+   color: #4f3961;
+   font-size: 3rem;
+   font-weight: 900;
+ }
+
+ h2 {
+   font-size: 2.5rem;
+   font-weight: bold;
+ }
+
+ h3 {
+   font-size: 1rem;
+   font-weight: bold;
+   margin-bottom: 20px;
+ }
+
+ p {
+   margin: 0;
+ }
+
+ /* heading section */
+ .heading {
+   margin-top: 4rem;
+ }
+
+ /* checkbox section */
+ input[type="checkbox"] {
+   position: relative;
+   margin: 10px 15px 0;
+   top: 10px;
+   width: 70px;
+   height: 35px;
+   -webkit-appearance: none;
+   background: hsl(237, 63%, 64%);
+   outline: none;
+   border-radius: 20px;
+   transition: .5s;
+   cursor: pointer;
+ }
+
+ input[type="checkbox"]:hover {
+   background: hsl(236, 72%, 79%);
+ }
+
+ /* checkbox slider section */
+ input[type="checkbox"]:before {
+   position: absolute;
+   content: '';
+   width: 30px;
+   height: 30px;
+   border-radius: 20px;
+   top: 2px;
+   left: 2px;
+   background: #fff;
+   transition: .5s;
+   transform: scale(.9);
+ }
+
+ input:checked[type="checkbox"]:before {
+   left: 37px;
+ }
+
+ /* card section */
+ .container {
+   text-align: center;
+ }
+
+ .card {
+   margin: 80px 0;
+   padding: 30px 20px;
+   border: 0 solid;
+   border-radius: 8px;
+ }
+
+ /* button section */
+ .button {
+   background-image: Linear-gradient(to right,
+       hsl(236, 72%, 79%),
+       hsl(237, 63%, 64%));
+   color: #fff;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 2px;
+   border-radius: 8px;
+   border: 0 solid;
+   height: 50px;
+   margin: 10px 0;
+ }
+
+ .button:hover {
+   background: #fff;
+   border: 1px solid hsl(233, 13%, 49%);
+   color: hsl(233, 13%, 49%);
+ }
+
+ /* middle card */
+ .middle-card h1 {
+   color: #fff;
+ }
+
+ .middle-card {
+   margin: 60px 0;
+   padding-top: 50px;
+   background: hsl(236, 72%, 79%);
+   color: #fff;
+ }
+
+ /* middle button */
+ .middle-button {
+   background: #fff;
+   color: hsl(236, 72%, 79%);
+   ;
+ }
+
+ .middle-button:hover {
+   background: hsl(236, 72%, 79%);
+   color: #fff;
+   border: 1px solid #fff;
+ }
+
+ .attribution {
+   font-size: 11px;
+   text-align: center;
+   margin: 0 0 20px;
+ }
+
+ .attribution a {
+   color: hsl(228, 45%, 44%);
+ }
+
+
+@media (max-width:1440px) {
+  .top-container{
+    margin-bottom: 50px;
+  }
+  .container{
+     text-align: center;
+  }
+  .card{
+    margin: 20px 30px;
+  }
+}
